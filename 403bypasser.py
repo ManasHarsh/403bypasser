@@ -125,9 +125,10 @@ class PathRepository():
     def createNewHeaders(self):
         headers_overwrite = ["X-Original-URL", "X-Rewrite-URL"]
         
-        headers = ["X-Custom-IP-Authorization", "X-Forwarded-For", 
+        headers = ["X-Custom-IP-Authorization", "X-Forwarded-For",
                 "X-Forward-For", "X-Remote-IP", "X-Originating-IP", 
-                "X-Remote-Addr", "X-Client-IP", "X-Real-IP"]
+                "X-Remote-Addr", "X-Client-IP", "X-Real-IP",
+                "X-Forwarded-Host"]
         
         values = ["localhost", "localhost:80", "localhost:443", 
                 "127.0.0.1", "127.0.0.1:80", "127.0.0.1:443", 
